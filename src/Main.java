@@ -15,6 +15,8 @@ public class Main {
             System.out.println("Menu");
             System.out.println("1 - Přidat mazlíčka");
             System.out.println("2 - Výpis všech mazlíčků");
+            System.out.println("3 - Průměrný věk a váha");
+
 
             int volba = sc.nextInt();
 
@@ -39,7 +41,10 @@ public class Main {
                     }
                     break;
                 case 3:
-                    System.out.println("Průměrný věk a váha");
+                    System.out.println("Průměrný věk");
+                    System.out.println(SpravaMazlicku.vypocetPrumernehoVeku(seznam));
+                    System.out.println("Průměrná váha");
+                    System.out.println(SpravaMazlicku.vypocetPrumerneVahy(seznam));
                     break;
                 case 4:
                     System.out.println("Hledání podle jména");
