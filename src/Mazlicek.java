@@ -44,6 +44,7 @@ public class Mazlicek {
         this.vaha = vaha;
     }
 
+    @Override
     public String toString() {
         return jmeno + "\n" + druh + "\n" + vek + "\n" + vaha;
     }
